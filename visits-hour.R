@@ -2,7 +2,7 @@ library(plyr)
 library(dplyr)
 library(stringr)
 library(ggplot2)
-raw <- read.csv("./MDC/visit-by-hr.csv")
+raw <- read.csv("./[REDACTED]/visit-by-hr.csv")
 raw <- raw[-c(1),2:3]
 names(raw) <- c("Day","Visits")
 raw$Day <- gsub("/2014","X",raw$Day)
